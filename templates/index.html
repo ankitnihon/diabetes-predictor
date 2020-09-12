@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>糖尿病予測ツール</title>
+        <link rel="shortcut icon" href="static\diabetes-favicon.ico">
+        <link rel="stylesheet" type="text/css" href="..\static\styles.css">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">糖尿病予測ツール</span></h2>
+            <div class='description'>
+    			<p>クラウド環境上でデプロイした機械学習ウエブアプリ</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input size="50" class="form-input" type="text" name="pregnancies" placeholder="妊娠数 例 0"><br>
+                <input size="50" class="form-input" type="text" name="glucose" placeholder="グルコース(mg/dL) 例 80"><br>
+                <input size="50" class="form-input" type="text" name="bloodpressure" placeholder="血圧 (mmHg) 例 80"><br>
+                <input size="50" class="form-input" type="text" name="skinthickness" placeholder="皮膚の厚さ (mm) 例 20"><br>
+                <input size="50" class="form-input" type="text" name="insulin" placeholder="インスリンレベル (IU/mL) 例 80"><br>
+                <input size="50" class="form-input" type="text" name="bmi" placeholder="ボディマス指数 (kg/m²) 例 23.1"><br>
+                <input size="50" class="form-input" type="text" name="dpf" placeholder="糖尿病家系関数 例 0.52"><br>
+                <input size="50" class="form-input" type="text" name="age" placeholder="年齢(歳) 例 34"><br>
+
+        		<input type="submit" class="my-cta-button" value="予測">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/ankitnihon"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/narangankit/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>開発者:ナラングアンキット</p>
+       </div>
+
+    </body>
+</html>
