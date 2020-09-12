@@ -10,6 +10,8 @@
 ![GIF](readme_resources/diabetes-predictor-web-app.gif)
 
 •　クラウド環境上デプロイした機械学習ウエブアプリです。
+
 •　データセットはKaggle(カグル)からダウンロードしたものです。
+
 •　ウエブアプリは日本語版のみになります。
 
