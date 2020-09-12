@@ -15,3 +15,7 @@
 
 •　ウエブアプリは日本語版のみになります。
 
+•　下記のリンクからアクセスしてください。
+
+https://diabetes-predict-ml.herokuapp.com/
+
